@@ -1,5 +1,5 @@
 body{
-    background-color: #7171c4;
+    background-color: #ffffff;
 }
 
 *{
@@ -7,11 +7,28 @@ body{
     padding: 0;
 }
 .textos_header > p p{
-    color: #5f5ffa;
+    color: #b2ffff;
 }
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+.enlaces_header > a {
+    text-decoration: none;
+    color: #b2ffff;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.enlaces_header > a:hover{
+    background-color: #b2ffff;
+    border-color: #b2ffff;
+    border-radius: 10px;
+    transition: all ease-in-out .5s;
+    font-size: x-large;
+}
+
 
 .contenedor{
     width: 90%;
@@ -22,7 +39,7 @@ body{
 nav{
     width: 100%;
     height: 80px;
-    background-color: aliceblue;
+    background-color: #ffffff;
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgba(0,0, .2);
     position: fixed;
@@ -84,8 +101,8 @@ div .winsports_logo > img {
 
 /* footer //////////////// */
 footer {
-    background-color: rgb(169, 169, 179);
-    padding: 47px 0 17px 0;
+    background-color: #ededed;
+    padding: 41px 0 11px 0;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -175,4 +192,16 @@ footer {
 .social-media > a > i:hover {
     background-color: rgb(95, 95, 250);
     border-color: rgb(95, 95, 250);
+}
+
+/* PRINCIPAL ////////////////////////////////////////////// */
+
+/*EQUIPOS*/
+
+.logo_equipos > img{
+    width: 100;
+    height: 100px;
+    text-align: center;
+    margin: 25px;
+    display: block;
 }
