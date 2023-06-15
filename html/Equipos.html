@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/logo colombia 2.png" type="image/png">
     <title>Equipos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;+
+        }
+    
+        th, td {
+          padding: 31.5px;
+          text-align: center;
+          border-bottom: 1px solid #ddd;
+        }
+    
+        th {
+          background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
     <table class="encabezado" border="1" width="100%" cellpadding="0" cellspacing="0" bordercolor="#000000">
@@ -15,34 +31,148 @@
     <table class="teams" border="1" width="100%" cellpadding="90" cellspacing="40" bordercolor="#000000">
         <tbody>
             <tr>
-                <td><div class="logo_equipos"><img src="https://i.pinimg.com/originals/97/d5/1b/97d51bfa1aed7284192e30940213c3bb.png" alt="Escudo Atletico nacional"></div></td>
-                <td><div class="logo_equipos"><img src="https://futbolete.com/apuestas/wp-content/uploads/2020/10/1200px-Escudo_de_Millonarios_temporada_2017-1-997x1024.png" alt="Escudo Millonarios FC"></div></td>
-                <td><div class="logo_equipos"><img src="https://vignette3.wikia.nocookie.net/fifa/images/9/96/Logo_Independiente_Santa_Fe.png/revision/latest?cb=20161208181512" alt="Escudo Indepentiente Santa fe"></div></td>
-                <td><div class="logo_equipos"><img src="https://logodownload.org/wp-content/uploads/2020/03/america-de-cali-logo-1-1708x2048.png" alt="Escudo de America De Cali"></div></td>
-                <td><div class="logo_equipos"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Escudo_de_Atl%C3%A9tico_Junior.svg/1200px-Escudo_de_Atl%C3%A9tico_Junior.svg.png" alt="Escudo de Junior CF"></div></td>
+                <td><div class="logo_equipos" id="Atletico-Nacional"><img src="https://i.pinimg.com/originals/97/d5/1b/97d51bfa1aed7284192e30940213c3bb.png" alt="Escudo Atletico nacional" onclick="Nacional()"></div></td>
+                <td><div class="logo_equipos" id="Millonarios-FC"><img src="https://futbolete.com/apuestas/wp-content/uploads/2020/10/1200px-Escudo_de_Millonarios_temporada_2017-1-997x1024.png" alt="Escudo Millonarios FC" onclick="MillonariosF()"></div></td>
+                <td><div class="logo_equipos" id="Inde-SF"><img src="https://vignette3.wikia.nocookie.net/fifa/images/9/96/Logo_Independiente_Santa_Fe.png/revision/latest?cb=20161208181512" alt="Escudo Indepentiente Santa fe" onclick="Independientesaf()"></div></td>
+                <td><div class="logo_equipos" id="America-DC"><img src="https://logodownload.org/wp-content/uploads/2020/03/america-de-cali-logo-1-1708x2048.png" alt="Escudo de America De Cali" onclick="AmericaDc()"></div></td>
+                <td><div class="logo_equipos" id="Junior-FC"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Escudo_de_Atl%C3%A9tico_Junior.svg/1200px-Escudo_de_Atl%C3%A9tico_Junior.svg.png" alt="Escudo de Junior CF" onclick="Juniorfc()"></div></td>
             </tr>
             <tr>
-                <td><div class="logo_equipos"><img src="https://tse2.mm.bing.net/th?id=OIP.QBeyXIrNh8HF_v4mnieOawHaHa&pid=Api&P=0" alt="Escudo Deportivo cali"></div></td>
-                <td><div class="logo_equipos"><img src="https://logodownload.org/wp-content/uploads/2020/03/independiente-medellin-logo-3-557x599.png" alt="Escudo Independiente medellin"></div></td>
-                <td><div class="logo_equipos"><img src="https://files.antena2.com/antena2/public/tags/2018-07/Once%20Caldas.png" alt="Escudo Once caldas"></div></td>
-                <td><div class="logo_equipos"><img src="https://logodownload.org/wp-content/uploads/2019/04/tolima-logo-escudo-3.png" alt="Escudo Deportes tolima"></div></td>
-                <td><div class="logo_equipos"><img src="https://files.antena2.com/antena2/public/tags/2018-07/Pasto.png" alt="Escudo Deportivo pasto"></div></td>
+                <td><div class="logo_equipos" id="Deportivo-Ca"><img src="https://tse2.mm.bing.net/th?id=OIP.QBeyXIrNh8HF_v4mnieOawHaHa&pid=Api&P=0" alt="Escudo Deportivo cali" onclick="Deportivoca()"></div></td>
+                <td><div class="logo_equipos" id="Independiente-Me"><img src="https://logodownload.org/wp-content/uploads/2020/03/independiente-medellin-logo-3-557x599.png" alt="Escudo Independiente medellin" onclick="Independienteme()"></div></td>
+                <td><div class="logo_equipos" id="Once-Cal"><img src="https://files.antena2.com/antena2/public/tags/2018-07/Once%20Caldas.png" alt="Escudo Once caldas" onclick="Oncecal()"></div></td>
+                <td><div class="logo_equipos" id="Deportes-To"><img src="https://logodownload.org/wp-content/uploads/2019/04/tolima-logo-escudo-3.png" alt="Escudo Deportes tolima" onclick="Deportesto()"></div></td>
+                <td><div class="logo_equipos" id="Deportivo-Pa"><img src="https://files.antena2.com/antena2/public/tags/2018-07/Pasto.png" alt="Escudo Deportivo pasto" onclick="Deportivopa()"></div></td>
             </tr>
             <tr>
-                <td><div class="logo_equipos"><img src="https://3.bp.blogspot.com/-fk-nL8nWawA/V18YZoLdZ9I/AAAAAAAADCg/FXPX9GezdjwZNsSoD5Pyp7ATlzKP5-7fgCLcB/s1600/escudo2.png" alt="Escudo Deportivo pereira"></div></td>
-                <td><div class="logo_equipos"><img src="https://www.futbox.com/img/v1/dd1/438/789/30e/969b88037e60c1166eb3_zoom.png" alt="Escudo Boyaca chico"></div></td>
-                <td><div class="logo_equipos"><img src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/4229.png" alt="Escudo Union magdalena"></div></td>
-                <td><div class="logo_equipos"><img src="https://2.bp.blogspot.com/-xnKw1v-3QQw/WWHZVkJT-0I/AAAAAAABMMI/JqsPQ9gfv1QtsHnHbn-DVakTq2QCLPVqgCLcBGAs/s1600/La%2BEquidad%2BFC.png" alt="Escudo la equidad"></div></td>
-                <td><div class="logo_equipos"><img src="https://1.bp.blogspot.com/-ZzQH7IBJaN8/WMXeLYOsMLI/AAAAAAAAFa0/9BVLdSrmybETTPut69hlwS2w1sz3YGM_ACLcB/s1600/escudo8.png" alt="Escudo Atletico huila"></div></td>
+                <td><div class="logo_equipos" id="Deportivo-Pe"><img src="https://3.bp.blogspot.com/-fk-nL8nWawA/V18YZoLdZ9I/AAAAAAAADCg/FXPX9GezdjwZNsSoD5Pyp7ATlzKP5-7fgCLcB/s1600/escudo2.png" alt="Escudo Deportivo pereira" onclick="Deportivope()"></div></td>
+                <td><div class="logo_equipos" id="Boyaca-C"><img src="https://www.futbox.com/img/v1/dd1/438/789/30e/969b88037e60c1166eb3_zoom.png" alt="Escudo Boyaca chico" onclick="Boyacach()"></div></td>
+                <td><div class="logo_equipos" id="Union-M"><img src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/4229.png" alt="Escudo Union magdalena" onclick="Unionmag()"></div></td>
+                <td><div class="logo_equipos" id="Equidad-FC"><img src="https://2.bp.blogspot.com/-xnKw1v-3QQw/WWHZVkJT-0I/AAAAAAABMMI/JqsPQ9gfv1QtsHnHbn-DVakTq2QCLPVqgCLcBGAs/s1600/La%2BEquidad%2BFC.png" alt="Escudo la equidad" onclick="Equidadfc()"></div></td>
+                <td><div class="logo_equipos" id="Atletico-H"><img src="https://1.bp.blogspot.com/-ZzQH7IBJaN8/WMXeLYOsMLI/AAAAAAAAFa0/9BVLdSrmybETTPut69hlwS2w1sz3YGM_ACLcB/s1600/escudo8.png" alt="Escudo Atletico huila" onclick="Atleticohui()"></div></td>
             </tr>
             <tr>
-                <td><div class="logo_equipos"><img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/11828036/ab.png" alt="Escudo Atletico bucaramanga"></div></td>
-                <td><div class="logo_equipos"><img src="https://futbolete.com/apuestas/wp-content/uploads/2022/10/Aguilas-Doradas-pronosticos-y-apuestas-1024x1024.png" alt="Escudo Aguilas doradas"></div></td>
-                <td><div class="logo_equipos"><img src="https://files.antena2.com/antena2/public/tags/2018-07/Envigado_0.png" alt="Escudo Envigafo FC"></div></td>
-                <td><div class="logo_equipos"><img src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/4199.png" alt="Escudo Alianza petrolera"></div></td>
-                <td><div class="logo_equipos"><img src="https://i.pinimg.com/originals/ff/d3/9c/ffd39cc1a04232cf1f8b06f33a0ff497.png" alt="Escudo Jaguares de cordoba"></div></td>
+                <td><div class="logo_equipos" id="Atletico-Bu"><img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/11828036/ab.png" alt="Escudo Atletico bucaramanga" onclick="Atleticobu()"></div></td>
+                <td><div class="logo_equipos" id="Aguilas-D"><img src="https://futbolete.com/apuestas/wp-content/uploads/2022/10/Aguilas-Doradas-pronosticos-y-apuestas-1024x1024.png" alt="Escudo Aguilas doradas" onclick="Aguilas()"></div></td>
+                <td><div class="logo_equipos" id="Envigado-FC"><img src="https://files.antena2.com/antena2/public/tags/2018-07/Envigado_0.png" alt="Escudo Envigado FC" onclick="Envigadofc()"></div></td>
+                <td><div class="logo_equipos" id="Alianza-Pe"><img src="http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/4199.png" alt="Escudo Alianza petrolera" onclick="Alianzape()"></div></td>
+                <td><div class="logo_equipos" id="Jaguares-Co"><img src="https://i.pinimg.com/originals/ff/d3/9c/ffd39cc1a04232cf1f8b06f33a0ff497.png" alt="Escudo Jaguares de cordoba" onclick="Jaguaresfc()"></div></td>
             </tr>
         </tbody>
     </table>
+    <script>
+        let AguilasD = document.getElementById("Aguilas-D");
+        let Millonarios = document.getElementById("Millonarios-FC");
+        let AtleticoN = document.getElementById("Atletico-Nacional");
+        let AmericaC = document.getElementById("America-DC");
+        let BoyacaC = document.getElementById("Boyaca-C");
+        let AlianzaP = document.getElementById("Alianza-Pe");
+        let IndependienteM = document.getElementById("Independiente-Me");
+        let DeportivoP = document.getElementById("Deportivo-Pa");
+        let Junior = document.getElementById("Junior-FC");
+        let IndependienteSF = document.getElementById("Inde-SF");
+        let Laequidad = document.getElementById("Equidad-FC");
+        let DeportivoPe = document.getElementById("Deportivo-Pe");
+        let DeportesT = document.getElementById("Deportes-To");
+        let DeportivoC = document.getElementById("Deportivo-Ca");
+        let AtleticoB = document.getElementById("Atletico-Bu");
+        let Envigado = document.getElementById("Envigado-FC");
+        let OnceC = document.getElementById("Once-Cal");
+        let Jaguares = document.getElementById("Jaguares-Co");
+        let UnionM = document.getElementById("Union-M"); 
+        let AtleticoH = document.getElementById("Atletico-H");
+        function Nacional(AtleticoN){
+            if(document.getElementById("Atletico-Nacional")){
+                window.location.href = 'https://www.atlnacional.com.co/';
+            }
+        }
+        function MillonariosF(Millonarios){
+            if(document.getElementById("Millonarios-FC")){
+                window.location.href = 'https://millonarios.com.co/';
+            }
+        }
+        function Aguilas(AguilasD){
+            if(document.getElementById("Aguilas-D")){
+                window.location.href = 'https://aguilasdoradas.com.co/';
+            }
+        }
+        function AmericaDc(AmericaC){
+            if(document.getElementById("America-DC")){
+                window.location.href = 'https://www.americadecali.co/';
+            }
+        } function Boyacach(BoyacaC){
+            if(document.getElementById("Boyaca-C")){
+                window.location.href = 'https://chicofutbolclub.com/';
+            }
+        }
+        function Alianzape(AlianzaP){
+            if(document.getElementById("Alianza-Pe")){
+                window.location.href = 'https://alianzapetrolerafc.com/';
+            }
+        } function Independienteme(IndependienteM){
+            if(document.getElementById("Independiente-Me")){
+                window.location.href = 'https://dimoficial.com/';
+            }
+        }
+        function Deportivope(DeportivoPe){
+            if(document.getElementById("Deportivo-Pe")){
+                window.location.href = 'https://www.deportivopereira.com.co/homepage/';
+            }
+        } function Juniorfc(Junior){
+            if(document.getElementById("Junior-FC")){
+                window.location.href = 'https://juniorfc.co/';
+            }
+        }
+        function Independientesaf(IndependienteSF){
+            if(document.getElementById("Inde-SF")){
+                window.location.href = 'https://independientesantafe.com/';
+            }
+        } function Equidadfc(Laequidad){
+            if(document.getElementById("Equidad-FC")){
+                window.location.href = 'https://equidadclubdeportivo.coop/';
+            }
+        }
+        function Deportivopa(DeportivoP){
+            if(document.getElementById("Deportivo-Pa")){
+                window.location.href = 'https://deportivopastooficial.com/';
+            }
+        } function Deportesto(DeportesT){
+            if(document.getElementById("Deportes-To")){
+                window.location.href = 'https://clubdeportestolima.com.co/';
+            }
+        }
+        function Deportivoca(DeportivoC){
+            if(document.getElementById("Deportivo-Ca")){
+                window.location.href = 'https://deportivocali.com.co/';
+            }
+        } function Atleticobu(AtleticoB){
+            if(document.getElementById("Atletico-Bu")){
+                window.location.href = 'https://atleticobucaramanga.com.co/';
+            }
+        }
+        function Envigadofc(Envigado){
+            if(document.getElementById("Envigado-FC")){
+                window.location.href = 'https://www.envigadofc.co/';
+            }
+        } function Oncecal(OnceC){
+            if(document.getElementById("Once-Cal")){
+                window.location.href = 'https://www.oncecaldas.com.co/';
+            }
+        }
+        function Jaguaresfc(Jaguares){
+            if(document.getElementById("Jaguares-Co")){
+                window.location.href = 'https://www.jaguaresfc.com.co/';
+            }
+        } function Unionmag(UnionM){
+            if(document.getElementById("Union-M")){
+                window.location.href = 'https://twitter.com/UnionMagdalena';
+            }
+        }
+        function Atleticohui(AtleticoH){
+            if(document.getElementById("Atletico-H")){
+                window.location.href = 'http://www.clubatleticohuila.com.co/';
+            }
+        }
+    </script>
 </body>
 </html>

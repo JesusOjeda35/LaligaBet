@@ -204,4 +204,21 @@ footer {
     text-align: center;
     margin: 25px;
     display: block;
+    margin-left: 35%;
+    cursor: pointer;
+}
+
+/*TABLAS*/
+
+
+.tabla-clasificacion{
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    margin-top: 100%;
+    padding: 0 1 0;
+    background-color: #5f5ffa;
+}
+.tabla-principal{
+    width: 100%;
+    border: 1px solid black;
 }
